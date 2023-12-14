@@ -3,7 +3,6 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-nati
 import DataTable from '../components/Iot_table';
 import Chart from '../components/Iot_graph';
 import IoTControl from '../components/Iot_control';
-import Footer from '../components/Footer';
 import tw from 'twrnc';
 
 const HomeScreen = () => {
@@ -28,15 +27,17 @@ const HomeScreen = () => {
         <Text style={tw`text-xl mt-9 flex-1 ml-8 font-bold`}>Quick Action</Text>
         <IoTControl />
       </View>
-      {/* <Footer /> */}
+    
     </ScrollView>
+    
+
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fffff',
+    backgroundColor: '#f0f0f0',
   },
   graphContainer: {
     alignItems: 'center',
