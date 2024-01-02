@@ -10,6 +10,7 @@
       "image": "./assets/splash-plantique.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
+      
     },
     "assetBundlePatterns": [
       "**/*"

@@ -11,6 +11,7 @@ const Tab = createBottomTabNavigator();
 const AppNavigation = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [name, setName] = useState('');
+  
 
   const handleButtonPress = () => {
     setModalVisible(true);
@@ -52,9 +53,9 @@ const AppNavigation = () => {
         />
         {/* Tambahkan lebih banyak Tab.Screen di sini sesuai kebutuhan Anda */}
       </Tab.Navigator>
-      <Modal visible={modalVisible} animationType="slide" transparent={true}>
+      <Modal visible={modalVisible} animationType="faden" transparent={true}>
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-          <View style={{ backgroundColor: 'white', padding: 20, borderRadius: 10, width: '80%', height: '17%' }}>
+          <View style={{ backgroundColor: 'white', padding: 20, borderRadius: 10, width: '80%', height: '19%' }}>
             <Text>Input New Device Name:</Text>
             <TextInput
               style={{ height: 40, borderColor: 'gray', borderWidth: 1, marginBottom: 10 }}

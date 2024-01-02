@@ -8,6 +8,21 @@ import {
   ContributionGraph,
   StackedBarChart
 } from "react-native-chart-kit";
+import axios from 'axios';
+
+const fetchData = () => {
+  axios.get('http://192.168.1.14/sensor')
+    .then(response => {
+      console.log('Response from sensor:', response.data);
+      setSensorData({
+        status: response.data.responseMessage,
+        nilai: response.data.nddiValue,
+      });
+    })
+    .catch(error => {
+      console.error('Error fetching sensor data:', error);
+    });
+};
 
 const screenWidth = Dimensions.get("window").width;
 
